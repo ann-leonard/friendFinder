@@ -1,5 +1,4 @@
 function buildQues(index, name){
-    $('#begin').remove()
     $('#display').empty()
 
     $('#display').prepend(questions[index])
@@ -31,7 +30,7 @@ function buildQues(index, name){
 function getInfo(){
     var index = 0
 
-    var input = $('<div class="form-row align-items-center"><div class="col-auto"><label class="sr-only" for="inlineFormInput">Name</label><input type="text" class="form-control mb-2" id="name" placeholder="Jane Doe"></div>')
+    var input = $('<div class="form-row align-items-center"><div class="col-auto m-3"><label class="sr-only" for="inlineFormInput">Name</label><input type="text" class="form-control mb-2" id="name" placeholder="Jane Doe"></div>')
     var button = $('<div class="col-auto"><button id="submit" class="btn btn-primary mb-2">Go to questions</button></div>')
     $('#display').append(input)
     $('#display').append(button)
